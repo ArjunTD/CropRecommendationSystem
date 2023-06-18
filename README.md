@@ -1,1 +1,1 @@
-CropRecommendationSystem using Machine learning ,Python,Html,css 
+CropRecommendationSystem using Machine learning ,Python,Html 
