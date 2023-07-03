@@ -1,10 +1,7 @@
 from flask import Flask, render_template, request
-import pandas as pd
 import numpy as np
-import sklearn
-import os
 import pickle
-import warnings
+
 
 app = Flask(__name__)
 
@@ -19,7 +16,7 @@ def index():
 @app.route('/predict', methods=['POST'])
 def predict():
     N = int(request.form['Nitrogen'])
-    P = int(request.form['Phosporus'])
+    P = int(request.form['Phosphorus'])
     K = int(request.form['Potassium'])
     temp = float(request.form['Temperature'])
     humidity = float(request.form['Humidity'])
